@@ -1,0 +1,44 @@
+create database PalliativeCare_DB character set utf8;
+
+use PalliativeCare_DB;
+
+create table answers (
+	a_id integer not null primary key auto_increment,
+	q_id integer not null,
+	answer varchar(10000) not null,
+	mail char(50) not null,
+	time timestamp not null
+);
+
+create table sub_answer (
+	sub_ans_id integer not null primary key auto_increment,
+	sub_id integer not null,
+	sub_answer varchar(10000) not null,
+	mail char(50) not null,
+	time timestamp not null
+);
+
+create table sub_question (
+	sub_id integer not null primary key auto_increment,
+	q_id integer not null,
+	question varchar(10000) not null,
+	mail char(50) not null,
+	time timestamp not null
+);
+
+create table topics (
+	q_id integer not null primary key auto_increment,
+	title char(200) not null,
+	detail varchar(10000) not null,
+	mail char(50) not null,
+	time timestamp not null,
+	field char(20) not null
+);
+
+create table users (
+	user_id integer not null primary key auto_increment,
+	mail char(50) not null,
+	password integer not null
+)
+
+

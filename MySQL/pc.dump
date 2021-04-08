@@ -1,0 +1,161 @@
+-- MySQL dump 10.14  Distrib 5.5.68-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: PalliativeCare_DB
+-- ------------------------------------------------------
+-- Server version	5.5.68-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `answers`
+--
+
+DROP TABLE IF EXISTS `answers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `answers` (
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+  `q_id` int(11) NOT NULL,
+  `answer` varchar(10000) NOT NULL,
+  `mail` char(50) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `answers`
+--
+
+LOCK TABLES `answers` WRITE;
+/*!40000 ALTER TABLE `answers` DISABLE KEYS */;
+INSERT INTO `answers` VALUES (3,1,' ÄÃ¢y lÃ  dáº¡ng thá»±c pháº©m chá»©c nÄƒng khÃ´ng pháº£i lÃ  thuá»‘c chá»¯a bá»‡nh. ÄÃ£ cÃ³ ngÆ°á»i bá»‡nh sá»­ dá»¥ng thuá»‘c nÃ y, nhÆ°ng nÃ³ chÆ°a thá»±c sá»± cÃ³ hiá»‡u quáº£ cao nhÆ° quáº£ng cÃ¡o. Hiá»‡n táº¡i thuá»‘c nÃ y chÆ°a cÃ³ tÃ¡c dá»¥ng phá»¥ gÃ¬','dr.bichthao@gmail.com','2021-01-18 08:47:48'),(4,3,' Chi phÃ­ chÄƒm sÃ³c giáº£m nháº¹ cho bá»‡nh nhÃ¢n vÃ  ngÆ°á»i nhÃ  phá»¥ thuá»™c vÃ o tÃ¬nh tráº¡ng bá»‡nh vÃ  phÆ°Æ¡ng phÃ¡p Ä‘iá»u trá»‹ cá»¥ thá»ƒ trong tá»«ng trÆ°á»ng há»£p. Thá»i gian CSGN thÆ°á»ng káº¿t há»£p trÆ°á»›c, trong vÃ  sau quÃ¡ trÃ¬nh Ä‘iá»u trá»‹ bá»‡nh','dr.bichthao90@gmail.com','2021-01-18 08:51:36'),(5,4,'Äiá»u trá»‹ bá»‡nh ung thÆ°, Ä‘iá»u quan tÃ¢m Ä‘áº§u tiÃªn lÃ  tÃ¢m lÃ½ ngÆ°á»i bá»‡nh. Khi há» thoáº£i mÃ¡i vá» tÃ¢m lÃ½ vÃ  cÃ³ hy vá»ng cho quÃ¡ trÃ¬nh Ä‘iá»u trá»‹ thÃ¬ sáº½ mang láº¡i hiá»‡u quáº£ cao cho quÃ¡ trÃ¬nh Ä‘iá»u trá»‹. NgÆ°á»i bá»‡nh suy nghÄ© vÃ  lo  láº¯ng quÃ¡ nhiá»u sáº½ lÃ m cÆ¡ thá»ƒ suy nhÆ°á»£c dáº§n vÃ  Ä‘Ã¡p á»©ng kÃ©m vá»›i Ä‘iá»u trá»‹, Ä‘Ã´i khi lÃ  khÃ´ng tuÃ¢n thá»§ Ä‘iá»u trá»‹. Váº­y Ä‘iá»u nhÃ¢n viÃªn y táº¿ cáº§n lÃ m Ä‘Ã³ lÃ  sá»± quan tÃ¢m, sáº» chia vÃ  thÄƒm há»i, chÄƒm sÃ³c ngÆ°á»i bá»‡nh nhÆ° ngÆ°á»i thÃ¢n cá»§a mÃ¬nh!','dr.bichthao90@gmail.com','2021-01-18 08:55:34'),(7,10,' ChÄƒm sÃ³c giáº£m nháº¹ khÃ´ng chá»‰ gá»“m giáº£m Ä‘au nhÆ° nhiá»u ngÆ°á»i láº§m tÆ°á»Ÿng. ChÄƒm sÃ³c giáº£m nháº¹ gá»“m xá»­ lÃ½ khÃ³ thá»Ÿ, xá»­ trÃ­ buá»“n nÃ´n vÃ  nÃ´n, xá»­ trÃ­ tÃ¡o bÃ³n á»‰a cháº£y, xá»­ trÃ­ chÃ¡n Äƒn suy mÃ²n\r\n','anhtuyet162@gmail.com','2021-01-20 04:02:12');
+/*!40000 ALTER TABLE `answers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sub_answer`
+--
+
+DROP TABLE IF EXISTS `sub_answer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sub_answer` (
+  `sub_ans_id` int(11) NOT NULL AUTO_INCREMENT,
+  `sub_id` int(11) NOT NULL,
+  `sub_answer` varchar(10000) NOT NULL,
+  `mail` char(50) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`sub_ans_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sub_answer`
+--
+
+LOCK TABLES `sub_answer` WRITE;
+/*!40000 ALTER TABLE `sub_answer` DISABLE KEYS */;
+INSERT INTO `sub_answer` VALUES (1,1,' bfgbghngnnhjmn','vfbgfbfb','2021-01-14 06:44:31');
+/*!40000 ALTER TABLE `sub_answer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sub_question`
+--
+
+DROP TABLE IF EXISTS `sub_question`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sub_question` (
+  `sub_id` int(11) NOT NULL AUTO_INCREMENT,
+  `q_id` int(11) NOT NULL,
+  `question` varchar(10000) NOT NULL,
+  `mail` char(50) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`sub_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sub_question`
+--
+
+LOCK TABLES `sub_question` WRITE;
+/*!40000 ALTER TABLE `sub_question` DISABLE KEYS */;
+INSERT INTO `sub_question` VALUES (2,1,'1. ÄÃ£ cÃ³ nghiÃªn cá»©u Ä‘á»‘i chá»©ng nÃ o so sÃ¡nh viá»‡c sá»­ dá»¥ng thuá»‘c vÃ  1 nhÃ³m thuá»‘c há»— trá»£ Ä‘iá»u trá»‹ ung thÆ° khÃ¡c chÆ°a?\r\n2. Khi bá»‡nh nhÃ¢n dÃ¹ng thuá»‘c thÃ¬ theo dÃµi nhá»¯ng triá»‡u chá»©ng nÃ o Ä‘á»ƒ biáº¿t bá»‡nh nhÃ¢n cÃ³ tÃ¡c dá»¥ng phá»¥ hay khÃ´ng? ( BÃ¬nh thÆ°á»ng bá»‡nh nhÃ¢n Ä‘Ã£ cÃ³ nhiá»u triá»‡u chá»©ng cá»§a bá»‡nh lÃ½ cá»§a báº£n thÃ¢n ngÆ°á»i bá»‡nh rá»“i)\r\n3. Viá»‡c dÃ¹ng thuá»‘c  vÃ  khÃ´ng dÃ¹ng thuá»‘c cÃ³ khÃ¡c nhau gÃ¬ hay khÃ´ng? Hiá»‡u quáº£ nhiá»u nháº¥t khi ngÆ°á»i bá»‡nh dÃ¹ng CumarGold Kare Ä‘Æ°á»£c ghi nháº­n lÃ  gÃ¬?','nguyenphuongthuy2809@gmail.com','2021-01-18 16:43:09'),(3,3,'Khi chi phÃ­ vÆ°á»£t quÃ¡ kháº£ nÄƒng chi tráº£ cá»§a ngÆ°á»i bá»‡nh thÃ¬ cÃ³ kháº£ nÄƒng bá»‡nh nhÃ¢n sáº½ bá»‹ Ã¡p lá»±c, dá»… dáº«n Ä‘áº¿n viá»‡c bá»‹ cÄƒng tháº³ng vá» máº·t tinh tháº§n. Trong trÆ°á»ng há»£p nÃ y, ngÆ°á»i bá»‡nh vÃ  gia Ä‘Ã¬nh cÃ³ thá»ƒ nháº­n Ä‘Æ°á»£c sá»± tÆ° váº¥n cÅ©ng nhÆ° giá»›i thiá»‡u cÃ¡c chÆ°Æ¡ng trÃ¬nh giÃºp lÃ m giáº£m Ã¡p lá»±c vá» kinh táº¿ tá»« chuyÃªn viÃªn csgn khÃ´ng?','cu_vo_708@yahoo.com.vn','2021-01-19 03:42:03');
+/*!40000 ALTER TABLE `sub_question` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `topics`
+--
+
+DROP TABLE IF EXISTS `topics`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `topics` (
+  `q_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` char(200) NOT NULL,
+  `detail` varchar(10000) NOT NULL,
+  `mail` char(50) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `field` char(20) NOT NULL,
+  PRIMARY KEY (`q_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `topics`
+--
+
+LOCK TABLES `topics` WRITE;
+/*!40000 ALTER TABLE `topics` DISABLE KEYS */;
+INSERT INTO `topics` VALUES (1,'ViÃªn uá»‘ng CumarGold Kare',' TÃ´i Ä‘Æ°á»£c biáº¿t CumarGold Kare lÃ  sáº£n pháº©m cÃ³ hiá»‡u quáº£ Ä‘á»‘i vá»›i viá»‡c há»— trá»£ Ä‘iá»u trá»‹ ung thÆ°. ÄÃ¢y cÃ³ pháº£i lÃ  má»™t dáº¡ng thá»±c pháº©m chá»©c nÄƒng khÃ´ng? ÄÃ£ cÃ³ ai tá»«ng sá»­ dá»¥ng hoáº·c quen biáº¿t ngÆ°á»i sá»­ dá»¥ng sáº£n pháº©m nÃ y chÆ°a? NÃ³ cÃ³ thá»±c sá»± hiá»‡u quáº£ nhÆ° quáº£ng cÃ¡o khÃ´ng? CÃ³ tÃ¡c dá»¥ng phá»¥ gÃ¬ khÃ´ng? ','doremondo32@yahoo.com.vn','2021-01-14 06:42:25','other'),(3,'Chi phÃ­ cho chÄƒm sÃ³c giáº£m nháº¹ nhÆ° tháº¿ nÃ o?',' Khi Ä‘Æ°á»£c cháº©n Ä‘oÃ¡n máº¯c bá»‡nh, chi phÃ­ vá» thuá»‘c men, chi phÃ­ hoÃ¡ trá»‹ xáº¡ trá»‹ cho má»—i Ä‘á»£t thÆ°á»ng cao vÃ  kÃ©o dÃ i. Váº­y tÃ´i muá»‘n há»i chi phÃ­ chÄƒm sÃ³c giáº£m nháº¹ cho bá»‡nh nhÃ¢n vÃ  ngÆ°á»i nhÃ  bá»‡nh nhÃ¢n nhÆ° tháº¿ nÃ o? Thá»i gian csgn sáº½ xen káº½ vá»›i lá»‹ch Ä‘iá»u trá»‹ hay táº­p trung chÃ­nh vÃ o giai Ä‘oáº¡n Ä‘áº§u khi ngÆ°á»i bá»‡nh cÃ³ biá»ƒu hiá»‡n chÃ¡n náº£n vÃ  lo Ã¢u nháº¥t?','linh0811254@gmail.com','2021-01-17 01:42:30','other'),(4,'Khi ngÆ°á»i bá»‡nh tá»« chá»‘i chÄƒm sÃ³c giáº£m nháº¹',' Cáº£m giÃ¡c chÃ¡n náº£n vÃ  má»‡t má»i lÃ  ko trÃ¡nh khá»i khi ngÆ°á»i bá»‡nh phÃ¡t hiá»‡n bá»‡nh muá»™n, vÃ o cÃ¡c giai Ä‘oáº¡n 3-4, tá»« chá»‘i csgn vÃ¬ tÃ¢m lÃ½ Ä‘áº§u hÃ ng cÄƒn bá»‡nh. Váº­y nhÃ¢n viÃªn csgn nÃªn can thiá»‡p vÃ o nhÆ° tháº¿ nÃ o?','linh08112541@gmail.com','2021-01-17 01:52:22','experience'),(7,'Váº¥n Ä‘á» Ä‘á»‘u vá»›i ngÆ°á»i chÄƒm sÃ³c (ngÆ°á»i nhÃ  bá»‡nh nhÃ¢n)',' ChÄƒm sÃ³c má»™t ngÆ°á»i bá»‡nh khiáº¿n ngÆ°á»i nhÃ  cÅ©ng gáº·p nhiá»u váº¥n Ä‘á» vá» tÃ¢m lÃ­. TÃ´i nghÄ© ngÆ°á»i nhÃ  thá»±c sá»± cáº§n Ä‘Æ°á»£c chÄƒm sÃ³c, láº¯ng nghe vÃ  chia sáº» cÃ¡c váº¥n Ä‘á» xung quanh ngÆ°á»i bá»‡nh. Thay vÃ¬ ngÆ°á»i bá»‡nh tá»« chá»‘i sá»± chÄƒm sÃ³c, mÃ  ngÆ°á»i thÃ¢n má»›i lÃ  ngÆ°á»i tá»« chá»‘i Ä‘Æ°á»£c há»— trá»£ thÃ¬ cÃ³ cÃ¡ch thá»©c nÃ o tÃ¡c Ä‘á»™ng thay Ä‘á»•i tÆ° duy, suy nghÄ© cá»§a há» khÃ´ng?','giangdo.163@gmail.com','2021-01-19 05:59:37','experience'),(8,'Dá»‹ch vá»¥ chÄƒm sÃ³c giáº£m nháº¹',' TÃ´i cÃ³ thá»ƒ tÃ¬m kiáº¿m dá»‹ch vá»¥ chÄƒm sÃ³c giáº£m nháº¹ á»Ÿ Ä‘Ã¢u vÃ  chi phÃ­ ra sao?','thunga2988@yahoo.com','2021-01-19 15:46:58','other'),(9,'CÃ¡c loáº¡i thuá»‘c giáº£m Ä‘au cho ngÆ°á»i bá»‡nh Ä‘iá»u trá»‹ táº¡i nhÃ ','TÃ´i Ä‘Æ°á»£c biáº¿t nhá»¯ng bá»‡nh nhÃ¢n ung thÆ° tiáº¿p nháº­n sá»± chá»¯a trá»‹ cá»§a bá»‡nh viá»‡n khi lÃªn cÆ¡n Ä‘au sáº½ cÃ³ thuá»‘c giáº£m Ä‘au. Váº­y tÃ´i muá»‘n há»i ráº±ng Ä‘á»‘i vá»›i bá»‡nh nhÃ¢n khÃ´ng nháº­p viá»‡n thÃ¬ khi lÃªn cÆ¡n Ä‘au, cáº§n lÃ m gÃ¬ Ä‘á»ƒ lÃ m dá»‹u cÆ¡n Ä‘au Ä‘Ã³? CÃ³ loáº¡i thuá»‘c nÃ o dÃ nh cho bá»‡nh nhÃ¢n Ä‘iá»u trá»‹ táº¡i nhÃ  khÃ´ng? Hiá»‡n á»Ÿ Viá»‡t Nam cÃ³ nhá»¯ng loáº¡i thuá»‘c giáº£m Ä‘au nÃ o? ChÃºng cÃ³ gÃ¢y ra tÃ¡c háº¡i gÃ¬ cho ngÆ°á»i bá»‡nh khÃ´ng?','doremondo32@yahoo.com.vn','2021-01-20 00:23:32','specialty'),(10,'ChÄƒm sÃ³c giáº£m nháº¹ cho bá»‡nh nhÃ¢n ung cÃ³ pháº£i chá»‰ lÃ  giáº£m Ä‘au?','Vá»›i bá»‡nh nhÃ¢n ung thÆ° giai Ä‘oáº¡n cuá»‘i, can thiá»‡p y táº¿ cÃ³ thá»ƒ gá»“m nhá»¯ng gÃ¬ ngoÃ i viá»‡c giáº£m Ä‘au?  ','anhtuyet162@gmail.com','2021-01-20 03:48:58','other');
+/*!40000 ALTER TABLE `topics` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mail` char(50) NOT NULL,
+  `password` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'liendh89@gmail.com',17111989),(2,'dr.bichthao90@gmail.com',3121990);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-02-10 17:17:54
